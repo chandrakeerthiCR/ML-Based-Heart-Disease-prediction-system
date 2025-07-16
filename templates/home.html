@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="left">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="empty">
+               
+            </div>
+
+            <div class="right">
+         <button> <a href="{{ url_for('home') }}">Home</a> </button>   
+         <button> <a href="{{ url_for('login') }}">Login</a> </button>    
+         </div> 
+    </div>
+
+        <div class="content">
+            <div class="img">
+                <img src="https://media.istockphoto.com/id/1589424364/photo/human-heart-care-concept-3d-illustration.webp?a=1&b=1&s=612x612&w=0&k=20&c=GC0F1mmm330LM4QxEXQrPrSucnqUj_TWPSwO-btWn4w="></img>
+            </div>
+            <div class="text">
+                <h2>hello,</h2>
+                <h1>welcome to </h1>
+                    <h4> R.L.J.I.T heart disease prediction web page. </h4>
+                <h3>"Prevention is better than cure. Start caring for your heart today."</h3>
+
+            </div>
+            
+        
+
+    </div>
+</div>
+   
+    {% if session['logged_in'] %}
+        <a href="{{ url_for('predict_page') }}">Go to Prediction Page</a>
+    {% endif %}
+</body>
+</html>

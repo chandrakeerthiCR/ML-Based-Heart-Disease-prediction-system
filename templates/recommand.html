@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='recommand.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>list of cardiologists</h1>
+        </div>
+        <div class="content">
+            <table border="1">
+                <tr>
+                    <th>docter Name</th>
+                    <th>hospital name</th>
+                    <th>experience</th>
+                    <th>contact details</th>
+                  
+                </tr>
+                <tr>
+                    <td> Dr. Prabhakar Shetty</td>
+                    <td>Manipal Hospital</td>
+                    <td> 28 Years </td>
+                    <td><a href="https://www.manipalhospitals.com/hebbal/about-us/">Manipal Hospital, Hebbal, Bangalore.</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Dr. Abhijit Vilas Kulkarni</td>
+                    <td>Apollo Hospitals </td>
+                    <td> 23 years </td>
+                    <td><a href="https://www.apollohospitals.com/doctors/cardiologist/bangalore/dr-abhijit-vilas-kulkarni/">apollo, Bengalure.</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Dr. Girish B Navasundi</td>
+                    <td>Apollo Hospitals </td>
+                    <td>  27 years  </td>
+                    <td><a href="https://www.apollohospitals.com/doctors/cardiologist/bangalore/dr-girish-b-navasundi/">apallo, Bengalure.</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Dr. Venkatesh T K</td>
+                    <td>Apollo Hospitals</td>
+                    <td>39 years </td>
+                    <td><a href="https://www.apollohospitals.com/doctors/cardiologist/bangalore/dr-venkatesh-t-k/">apallo, Bengalure.</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Dr. K P Srihari Das</td>
+                    <td>Manipal Hospital </td>
+                    <td> 31 years </td>
+                    <td><a href="https://www.manipalhospitals.com/">manipal,Bengalure.</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Dr. Anand R Shenoy</td>
+                    <td>Manipal Hospital </td>
+                    <td> 29 years </td>
+                    <td><a href="https://www.manipalhospitals.com/">manipal, Bengalure.</a></td>
+                </tr>
+
+                <tr>
+                    <td>Dr. Rajpal Singh</td>
+                    <td>Fortis Hospital</td>
+                    <td> 27 Years</td>
+                    <td><a href="https://www.fortishealthcare.com/">Fortis, Bengalure.</a></td>
+                </tr>
+                
+                <tr>
+                    <td>Dr. Shashidhar Pal</td>
+                    <td>Fortis Hospital</td>
+                    <td> 22 Years</td>
+                    <td><a href="https://www.fortishealthcare.com/">Fortis, Bengalure.</a></td>
+                </tr>
+               <tr>
+                <td>Dr. Prashanth Y M</td>
+                <td>Aster CMI Hospital</td>
+                <td>25 Years</td>
+                <td><a href="https://www.asterhospitals.in/hospitals/aster-cmi-bangalore">Aster CMI, Bangalore.</a></td>
+               </tr>
+            </table>
+           
+        </div>
+        <div class="btn">
+        <a href="{{ url_for('thank_you_page') }}" >Exit</a>
+        </div>
+    </div>
+        
+   
+
+    
+
+    
+</body>
+</html>

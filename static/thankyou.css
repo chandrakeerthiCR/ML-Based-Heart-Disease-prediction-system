@@ -1,0 +1,17 @@
+
+#heading1{
+text-align: center;
+text-transform: uppercase;
+font-family: 'Times New Roman', Times, serif;
+font-size: 50px;
+color: rgb(119, 26, 206);
+}
+.img{
+    display: flex;
+    justify-content: center;
+    img{
+        height: 50%;
+        width:50%;
+    }
+
+}
